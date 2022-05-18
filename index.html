@@ -49,7 +49,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <form id="form" action="https://poc-stg.web.fintalk.io/">
+        <form id="form" action="https://api-hub-dev.zaz.vc">
           <h1>Falazap Formulário STG</h1>
           <div class="mb-3">
             <label for="nomeCliente" class="form-label">Nome</label>
@@ -117,7 +117,7 @@
       e.preventDefault();
       const iframeContainer = $('.col.iframe-content');
       iframeContainer.empty();
-      const iframeBaseUrl = "https://captalys.web.fintalk.io";
+      const iframeBaseUrl = "https://poc-stg.web.fintalk.io/";
       const actionUrl = $form.attr("action");
       const formData = new FormData($form[0]);
       const payload = { json: Object.fromEntries(formData) };
